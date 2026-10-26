@@ -140,7 +140,7 @@ ul.main-menu li a {
 
 .banner-content h1 {
   font-size: 5.2rem;
-  line-height: 7rem;
+  line-height: 1.2;
   font-weight: 700;
 }
 
@@ -181,7 +181,7 @@ h2.product-heading {
   font-size: 2.8rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  line-height: 7rem;
+  line-height: 1.2;
 }
 
 .product-boxes {
@@ -206,7 +206,7 @@ h3.product-title {
   margin-bottom: 0.6rem;
   font-size: 2.8rem;
   font-weight: 500;
-  line-height: 4rem;
+  line-height: 1.2;
   color: var(--color-dark-3);
 }
 
@@ -279,7 +279,7 @@ a.see-more {
 .featured-product-content p {
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 2.8rem;
+  line-height: 1.7;
   max-width: 50rem;
 }
 
@@ -303,7 +303,7 @@ footer p.copy {
   font-family: "Manrope", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
