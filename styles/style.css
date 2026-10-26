@@ -35,6 +35,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 /* utility classes  */
 .gap-16 {
   margin-bottom: 1.6rem;
@@ -139,7 +144,7 @@ ul.main-menu li a {
 }
 
 .banner-content h1 {
-  font-size: 5.2rem;
+  font-size: clamp(2.5rem, 0.158rem + 4.07vw, 5.2rem);
   line-height: 1.2;
   font-weight: 700;
 }
@@ -187,7 +192,7 @@ h2.product-heading {
 .product-boxes {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin-bottom: 5rem;
 }
 
@@ -256,6 +261,7 @@ a.see-more {
 
 .featured-product-content {
   grid-area: content;
+  font-family: "Poppins", sans-serif;
 }
 
 .featured-product-container {
@@ -266,12 +272,8 @@ a.see-more {
   align-items: center;
 }
 
-.featured-product-content {
-  font-family: "Poppins", sans-serif;
-}
-
 .featured-product-content h2 {
-  font-size: 3.8rem;
+  font-size: clamp(2.5rem, 0.02rem + 3.04vw, 3.8rem);
   font-weight: 700;
   color: var(--color-dark-blue);
 }
@@ -314,7 +316,6 @@ footer p.copy {
 }
 
 .footer-social a {
-  display: inline-block;
   background-color: var(--color-gray-50);
   width: 3.2rem;
   height: 3.2rem;
@@ -341,24 +342,9 @@ footer p.copy {
   .banner-container {
     gap: 5rem;
   }
-  .banner-content h1 {
-    font-size: 4.2rem;
-  }
 
   .featured-product-container {
     gap: 5rem;
-  }
-  .featured-product-content h2 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 813px) {
-  .banner-content h1 {
-    font-size: 3.6rem;
-  }
-  .featured-product-content h2 {
-    font-size: 2.5rem;
   }
 }
 
@@ -386,10 +372,6 @@ footer p.copy {
     order: 2;
   }
 
-  .product-boxes {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .featured-product-container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -404,15 +386,5 @@ footer p.copy {
 
   .logo a {
     font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .banner-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .product-boxes {
-    grid-template-columns: 1fr;
   }
 }
